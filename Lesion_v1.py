@@ -57,7 +57,7 @@ class Lesion:
         plt.show()
     def getRGBVectors(self):
         x,y = np.where(self.seg == 1)
-        rgb = im[x,y,:].transpose()
+        rgb = self.im[x,y,:].transpose()
         # rgb[0] = r, rgb[1] = g, rgb[2] = b
         return rgb
     def calcRGBStats(self):
